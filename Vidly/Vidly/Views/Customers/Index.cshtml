@@ -1,12 +1,14 @@
-﻿@model Vidly.ViewModels.CustomerListViewModel
+﻿<!-- List of the model Customer. No need for view models -->
+@model IEnumerable<Vidly.Models.Customer>
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Customers";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Customers</h2>
 
-@if(Model.Customers.Count == 0)
+<!-- Model property -->
+@if (!Model.Any())
 {
     <p>There are no customers registered.</p>
 }
@@ -19,7 +21,7 @@ else
             </tr>
         </thead>
         <tbody>
-            @foreach(var customer in Model.Customers)
+            @foreach(var customer in Model)
             {
                 <tr>
                     <td>
