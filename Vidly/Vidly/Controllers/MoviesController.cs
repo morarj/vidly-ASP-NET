@@ -53,7 +53,7 @@ namespace Vidly.Controllers
         }
 
         // List of movies as private method
-        private IEnumerable<Movie> GetCustomers()
+        private IEnumerable<Movie> GetMovies()
         {
             return new List<Movie>
             {
