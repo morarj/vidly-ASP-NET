@@ -99,3 +99,11 @@ C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateCustomerBirthdate.resources
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateCustomerBirthdate1.resources
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateCustomerBirthdate2.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMovieModel.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPropertiesToMovie.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddGenre.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateGenres.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.FixTyposInMovie.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddStringLengthToGenres.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddStringLengthToMoviesName.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.RemoveNullableDatesFromMovies.resources

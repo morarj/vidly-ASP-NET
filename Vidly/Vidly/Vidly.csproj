@@ -223,9 +223,42 @@
     <Compile Include="Migrations\201608060143161_UpdateCustomerBirthdate2.Designer.cs">
       <DependentUpon>201608060143161_UpdateCustomerBirthdate2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201608060250045_AddMovieModel.cs" />
+    <Compile Include="Migrations\201608060250045_AddMovieModel.Designer.cs">
+      <DependentUpon>201608060250045_AddMovieModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608060255096_AddPropertiesToMovie.cs" />
+    <Compile Include="Migrations\201608060255096_AddPropertiesToMovie.Designer.cs">
+      <DependentUpon>201608060255096_AddPropertiesToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608060326043_AddGenre.cs" />
+    <Compile Include="Migrations\201608060326043_AddGenre.Designer.cs">
+      <DependentUpon>201608060326043_AddGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608060327046_PopulateGenres.cs" />
+    <Compile Include="Migrations\201608060327046_PopulateGenres.Designer.cs">
+      <DependentUpon>201608060327046_PopulateGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608060519180_FixTyposInMovie.cs" />
+    <Compile Include="Migrations\201608060519180_FixTyposInMovie.Designer.cs">
+      <DependentUpon>201608060519180_FixTyposInMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608060527341_AddStringLengthToGenres.cs" />
+    <Compile Include="Migrations\201608060527341_AddStringLengthToGenres.Designer.cs">
+      <DependentUpon>201608060527341_AddStringLengthToGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608060528447_AddStringLengthToMoviesName.cs" />
+    <Compile Include="Migrations\201608060528447_AddStringLengthToMoviesName.Designer.cs">
+      <DependentUpon>201608060528447_AddStringLengthToMoviesName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201608060530210_RemoveNullableDatesFromMovies.cs" />
+    <Compile Include="Migrations\201608060530210_RemoveNullableDatesFromMovies.Designer.cs">
+      <DependentUpon>201608060530210_RemoveNullableDatesFromMovies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -295,6 +328,7 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -343,6 +377,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201608060143161_UpdateCustomerBirthdate2.resx">
       <DependentUpon>201608060143161_UpdateCustomerBirthdate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608060250045_AddMovieModel.resx">
+      <DependentUpon>201608060250045_AddMovieModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608060255096_AddPropertiesToMovie.resx">
+      <DependentUpon>201608060255096_AddPropertiesToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608060326043_AddGenre.resx">
+      <DependentUpon>201608060326043_AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608060327046_PopulateGenres.resx">
+      <DependentUpon>201608060327046_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608060519180_FixTyposInMovie.resx">
+      <DependentUpon>201608060519180_FixTyposInMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608060527341_AddStringLengthToGenres.resx">
+      <DependentUpon>201608060527341_AddStringLengthToGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608060528447_AddStringLengthToMoviesName.resx">
+      <DependentUpon>201608060528447_AddStringLengthToMoviesName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201608060530210_RemoveNullableDatesFromMovies.resx">
+      <DependentUpon>201608060530210_RemoveNullableDatesFromMovies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
