@@ -90,3 +90,8 @@ C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.Cache
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSuscribedToCustomer.resources
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationsToCustomerName.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddNameToMembershipType.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembershipTypeData.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationToMembershipTypeName.resources
