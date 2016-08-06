@@ -95,3 +95,7 @@ C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddNameToMembershipType.resources
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateMembershipTypeData.resources
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.ApplyAnnotationToMembershipTypeName.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddBirthdateToCustomer.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateCustomerBirthdate.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateCustomerBirthdate1.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.UpdateCustomerBirthdate2.resources
