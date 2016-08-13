@@ -3,6 +3,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web.Mvc;
 using Vidly.Models;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -27,6 +28,62 @@ namespace Vidly.Controllers
             var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
             return View(customers);
+        }
+
+        // GET: Customers/New
+        public ActionResult New()
+        {
+            // List of MembershipTypes
+            var membershipTypes = _context.MembershipTypes.ToList();
+            // Create object of viewmodel
+            var viewModel = new CustomerFormViewModel()
+            {
+                MembershipTypes = membershipTypes
+            };
+
+            return View("CustomerForm", viewModel);
+        }
+
+        // GET: Customers/Edit
+        public ActionResult Edit(int id)
+        {
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
+
+            if (customer == null)
+                return HttpNotFound();
+
+            // Create object of viewmodel
+            var viewModel = new CustomerFormViewModel()
+            {
+                Customer = customer,
+                MembershipTypes = _context.MembershipTypes.ToList()
+            };
+
+            return View("CustomerForm", viewModel);
+        }
+
+        //POST: Customers/Save
+        [HttpPost]
+        public ActionResult Save(Customer customer)
+        {
+            if (customer.Id == 0)
+                // If theres no Id then is a new client
+                _context.Customers.Add(customer);
+            else
+            {
+                // Get the customer from the DB with the matching Id
+                var customerInDb = _context.Customers.Single(c => c.Id == customer.Id);
+
+                // Update the values of the customer in the DB with the values from the form
+                customerInDb.Name = customer.Name;
+                customerInDb.Birthdate = customer.Birthdate;
+                customerInDb.MembershipTypeId = customer.MembershipTypeId;
+                customerInDb.IsSuscribedToNewsLetter = customer.IsSuscribedToNewsLetter;
+            }
+
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Customers");
         }
 
         // GET: Customers/Details

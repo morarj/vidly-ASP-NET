@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Data.Entity;
 using Vidly.Models;
 using Vidly.ViewModels;
+using System.Data.Entity.Validation;
 
 namespace Vidly.Controllers
 {
@@ -29,6 +30,65 @@ namespace Vidly.Controllers
             var movies = _context.Movies.Include(c => c.Genre).ToList();
 
             return View(movies);
+        }
+
+        // GET:Movies/New
+        public ActionResult New()
+        {
+            var viewModel = new MovieFormViewModel()
+            {
+                Genres = _context.Genres.ToList()
+            };
+
+            return View("MovieForm", viewModel);
+        }
+
+        // GET:Movies/Edit/1
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            var viewModel = new MovieFormViewModel()
+            {
+                Movie = movie,
+                Genres = _context.Genres.ToList()
+            };
+
+            return View("MovieForm", viewModel);
+        }
+
+        [HttpPost]
+        // POST: Movies/Save
+        public ActionResult Save(Movie movie)
+        {
+            if (movie.Id == 0)
+            {
+                movie.DateAdded = DateTime.Now;
+                _context.Movies.Add(movie);
+            }
+            else
+            {
+                var movieInDb = _context.Movies.Single(m => m.Id == movie.Id);
+
+                movieInDb.Name = movie.Name;
+                movieInDb.ReleaseDate = movie.ReleaseDate;
+                movieInDb.GenreId = movie.GenreId;
+                movieInDb.NumberInStock = movie.NumberInStock;
+            }
+
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (DbEntityValidationException e)
+            {
+                Console.WriteLine(e);
+            }
+
+            return RedirectToAction("Index", "Movies");
         }
 
         // GET: Movies/Details/1
@@ -61,12 +121,6 @@ namespace Vidly.Controllers
 
             // Add the movie param to render the object
             return View(viewModel);
-        }
-
-        // GET: Movies/Edit
-        public ActionResult Edit(int movieId)
-        {
-            return Content("id = " + movieId);
         }
 
         // GET: Movies/released/1/2
