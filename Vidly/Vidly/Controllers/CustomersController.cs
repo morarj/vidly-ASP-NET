@@ -38,6 +38,7 @@ namespace Vidly.Controllers
             // Create object of viewmodel
             var viewModel = new CustomerFormViewModel()
             {
+                Customer = new Customer(),
                 MembershipTypes = membershipTypes
             };
 
@@ -64,8 +65,21 @@ namespace Vidly.Controllers
 
         //POST: Customers/Save
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Customer customer)
         {
+            // If the model is not valid return to the form with all the data
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new CustomerFormViewModel
+                {
+                    Customer = customer,
+                    MembershipTypes = _context.MembershipTypes.ToList()
+                };
+
+                return View("CustomerForm", viewModel);
+            }
+
             if (customer.Id == 0)
                 // If theres no Id then is a new client
                 _context.Customers.Add(customer);
