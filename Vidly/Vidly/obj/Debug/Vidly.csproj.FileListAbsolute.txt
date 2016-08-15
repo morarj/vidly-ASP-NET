@@ -107,3 +107,11 @@ C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddStringLengthToGenres.resources
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddStringLengthToMoviesName.resources
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.RemoveNullableDatesFromMovies.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\bin\AutoMapper.dll
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\bin\System.Net.Http.Formatting.dll
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\bin\System.Web.Http.dll
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\bin\System.Web.Http.WebHost.dll
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\bin\AutoMapper.xml
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\bin\System.Net.Http.Formatting.xml
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\bin\System.Web.Http.xml
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\bin\System.Web.Http.WebHost.xml
