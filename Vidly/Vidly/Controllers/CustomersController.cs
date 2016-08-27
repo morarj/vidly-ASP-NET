@@ -25,9 +25,10 @@ namespace Vidly.Controllers
         public ViewResult Index()
         {
             // Getting the list of customers from the private method
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            //var customers = _context.Customers.Include(c => c.MembershipType).ToList();
 
-            return View(customers);
+            //return View(customers);
+            return View();
         }
 
         // GET: Customers/New
