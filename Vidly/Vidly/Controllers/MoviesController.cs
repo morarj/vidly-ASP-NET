@@ -27,9 +27,13 @@ namespace Vidly.Controllers
         // GET: Movies
         public ViewResult Index(int? pageIndex, string sortBy)
         {
-            return View();
+            if(User.IsInRole(RoleName.CanManageMovies))
+                return View("List");
+
+            return View("ReadOnlyList");
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         // GET:Movies/New
         public ActionResult New()
         {
@@ -41,6 +45,7 @@ namespace Vidly.Controllers
             return View("MovieForm", viewModel);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         // GET:Movies/Edit/1
         public ActionResult Edit(int id)
         {
@@ -59,6 +64,7 @@ namespace Vidly.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = RoleName.CanManageMovies)]
         // POST: Movies/Save
         public ActionResult Save(Movie movie)
         {
@@ -99,6 +105,7 @@ namespace Vidly.Controllers
             return RedirectToAction("Index", "Movies");
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         // GET: Movies/Details/1
         public ActionResult Details(int id)
         {
@@ -110,6 +117,7 @@ namespace Vidly.Controllers
             return View(movie);
         }
 
+        [Authorize(Roles = RoleName.CanManageMovies)]
         // GET: Movies/Random
         public ActionResult Random()
         {
