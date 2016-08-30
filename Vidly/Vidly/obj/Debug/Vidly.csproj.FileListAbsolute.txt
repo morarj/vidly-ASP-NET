@@ -119,3 +119,5 @@ C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.FixedTypoAspNetRoles.resources
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddDrivingLicenseToApplicationUser.resources
 C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddPhoneToApplicationUser.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddRental.resources
+C:\Users\HugoMorArj\OneDrive\Cursos\Udemy\The-Complete-ASPNET-MVC-5\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddNumberAvailableToMovie.resources
